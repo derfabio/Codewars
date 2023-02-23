@@ -1,8 +1,8 @@
-package org.example.sumarrays;
+package org.example.sumarray;
 
 import java.util.Arrays;
 
-public class SumArrays {
+public class SumArray {
 
     public static double sum(double[] numbers) {
         return Arrays.stream(numbers).sum();
