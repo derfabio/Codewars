@@ -1,6 +1,6 @@
 //TODO: implement my own test
 
-package org.example.sumarray;
+package org.example.sumArray;
 
 import org.junit.jupiter.api.Test;
 

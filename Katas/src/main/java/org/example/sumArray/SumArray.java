@@ -1,4 +1,4 @@
-package org.example.sumarray;
+package org.example.sumArray;
 
 import java.util.Arrays;
 

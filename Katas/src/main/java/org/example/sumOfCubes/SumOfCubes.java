@@ -1,4 +1,4 @@
-package org.example.sumofcubes;
+package org.example.sumOfCubes;
 
 public class SumOfCubes {
     public long sumCubes(long n)

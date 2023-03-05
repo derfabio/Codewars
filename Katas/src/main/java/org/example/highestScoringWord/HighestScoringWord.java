@@ -1,28 +1,18 @@
 package org.example.highestScoringWord;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class HighestScoringWord {
     public String high(String s) {
-        List<String> words = List.of(s.split(" "));
-        String highestScoringWord = "";
-        int highestScore = 0;
-
-        for (String word: words) {
-            int score = calculateScore(word);
-            if (score > highestScore || (score == highestScore && s.indexOf(word) < s.indexOf(highestScoringWord))) {
-                highestScore = score;
-                highestScoringWord = word;
-            }
-        }
-        return highestScoringWord;
+        return Arrays.stream(s.split("\\s+"))
+                .max(Comparator.comparingInt(HighestScoringWord::calculateScore)
+                .thenComparingInt(s::indexOf))
+                .orElse("");
     }
 
     public static int calculateScore(String word) {
-        int score = 0;
-        for (int i = 0; i < word.length(); i++) {
-            score += word.charAt(i) - 'a' + 1;
-        }
-        return score;
+        return word.chars().map(c -> c - 'a' + 1).sum();
     }
 }
