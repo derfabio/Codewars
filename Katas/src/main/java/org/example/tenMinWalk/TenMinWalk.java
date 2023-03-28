@@ -2,7 +2,7 @@ package org.example.tenMinWalk;
 
 public class TenMinWalk {
     public static boolean isValid(char[] walk) {
-        return validLength(walk) && validDirections(walk);
+        return validSteps(walk) && validDirections(walk);
     }
 
     public static boolean validDirections(char[] walk) {
@@ -25,7 +25,7 @@ public class TenMinWalk {
         return (horizontal == 0) && (vertical == 0);
     }
 
-    public static boolean validLength(char[] walk) {
+    public static boolean validSteps(char[] walk) {
         return (walk.length == 10);
     }
 }
