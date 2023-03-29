@@ -9,17 +9,11 @@ public class TenMinWalk {
         int horizontal = 0;
         int vertical = 0;
         for (char direction : walk) {
-            if (direction == 'e') {
-                horizontal++;
-            }
-            if (direction == 'w') {
-                horizontal--;
-            }
-            if (direction == 'n') {
-                vertical++;
-            }
-            if (direction == 's') {
-                vertical--;
+            switch (direction) {
+                case 'e' -> horizontal++;
+                case 'w' -> horizontal--;
+                case 'n' -> vertical++;
+                case 's' -> vertical--;
             }
         }
         return (horizontal == 0) && (vertical == 0);
