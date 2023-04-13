@@ -1,4 +1,4 @@
-package between;
+package org.example.between;
 
 import java.util.stream.IntStream;
 

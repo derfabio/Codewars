@@ -8,6 +8,7 @@ public class CountDig {
         List<Integer> s = new ArrayList<>();
         for (int i = 0; i <= n; i++)
             s.add((int)Math.pow(i, 2));
+
         int count = 0;
         for (int number : s) {
             String numberAsString = String.valueOf(number);

@@ -5,4 +5,3 @@ public class Goals {
             return laLigaGoals+copaDelReyGoals+championsLeagueGoals;
         }
     }
-}
