@@ -1,7 +1,5 @@
 # Codewars
-My solutions for various Katas on Codewars.com
+My solutions for various coding problems (also known as Katas) on codewars.com.
+For now I stick to Java.
 
-
-- 23rd February 2023:
-Starting today. Java only until further notice.
-F
+- Fabio
