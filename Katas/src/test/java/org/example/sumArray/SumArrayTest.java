@@ -2,6 +2,7 @@
 
 package org.example.sumArray;
 
+import org.example.Codewars.sumArray.SumArray;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
